@@ -1,0 +1,979 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlatform - All Sections Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">EduPlatform</div>
+            <nav class="nav-links">
+                <a href="#home-section" class="active">Home</a>
+                <a href="#courses-section">Courses</a>
+                <a href="#dashboard-section">Dashboard</a>
+                <a href="#profile-section">Profile</a>
+                </nav>
+            <div class="nav-actions">
+                
+                <a href="#" class="btn btn-primary">Get Started</a>
+                <div class="user-avatar">PK</div>
+                <div class="notifications">75</div>
+            </div>
+            <div class="nav-actions">
+                <!-- Sign In button now links to a separate page with login/signup options -->
+                <a href="signin.html" class="sign-in">Sign In</a>
+                <a href="signup.html" class="btn btn-primary sign-up-btn">Sign Up</a>
+            </div>
+
+
+        </div>
+    </header>
+
+    <main>
+        <section id="home-section" class="hero-section">
+            <div class="container">
+                <h1>Learn Without Limits</h1>
+                <p>Master new skills with our expert-led courses. Join thousands of learners advancing their careers.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="What do you want to learn?">
+                    <button class="btn btn-primary">Explore Courses</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <h3>50,000+</h3>
+                    <p>Active Students</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-book-open"></i>
+                    <h3>1,200+</h3>
+                    <p>Total Courses</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>25,000+</h3>
+                    <p>Certificates Issued</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>94%</h3>
+                    <p>Success Rate</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-courses-section">
+            <div class="container">
+                <h2>Featured Courses</h2>
+                <p class="section-description">Handpicked courses from industry experts</p>
+                <div class="course-grid">
+                    <a href="#course-details-section" class="course-card">
+                        <div class="course-image" style="background-image: url('react.jpg');">
+                            <span class="course-tag intermediate">Intermediate</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Complete React Development Bootcamp</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.8 (15,420 students)</span>
+                                <span><i class="fas fa-clock"></i> 42 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$89.99</span>
+                                <button class="btn btn-secondary" onclick="event.preventDefault(); location.href='#course-details-section';">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('digitalMarketing.jpg');">
+                            <span class="course-tag beginner">Beginner</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Digital Marketing Masterclass</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.9 (22,180 students)</span>
+                                <span><i class="fas fa-clock"></i> 28 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$79.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('ui.jpg');">
+                            <span class="course-tag design">Design</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>UI/UX Design Fundamentals</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.7 (18,900 students)</span>
+                                <span><i class="fas fa-clock"></i> 35 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$94.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('dataScience.jpg');">
+                            <span class="course-tag advanced">Advanced</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Data Science with Python</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.9 (21,200 students)</span>
+                                <span><i class="fas fa-clock"></i> 58 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$129.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('adobe.jpg');">
+                            <span class="course-tag design">Intermediate</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Adobe Creative Suite Mastery</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.8 (16,750 students)</span>
+                                <span><i class="fas fa-clock"></i> 40 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$109.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('flutter.jpg');">
+                            <span class="course-tag intermediate">Intermediate</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Mobile App Development with Flutter</h3>
+                            <p class="instructor">By PrincPrince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.8 (12,800 students)</span>
+                                <span><i class="fas fa-clock"></i> 38 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$99.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+                <div class="view-all-courses">
+                    <a href="#courses-section" class="btn btn-outline-primary">View All Courses</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Start Learning?</h2>
+                <p>Join thousands of students already learning on our platform</p>
+                <a href="#courses-section" class="btn btn-outline-light">Browse Courses</a>
+            </div>
+        </section>
+
+        <section id="courses-section" class="courses-page-hero">
+            <div class="container">
+                <h1>Our Courses</h1>
+                <p>Explore a wide range of courses and master new skills.</p>
+            </div>
+        </section>
+
+        <section class="courses-listing-section">
+            <div class="container">
+                <div class="course-filters">
+                    <div class="category-tabs">
+                        <button class="category-tab active">Programming (5 courses)</button>
+                        <button class="category-tab">Data Science (2 courses)</button>
+                        <button class="category-tab">Marketing (3 courses)</button>
+                        <button class="category-tab">Business (2 courses)</button>
+                        <button class="category-tab">Design (2 courses)</button>
+                    </div>
+
+                    <div class="filter-controls">
+                        <div class="search-courses">
+                            <input type="text" placeholder="Search courses...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <select class="filter-dropdown">
+                            <option>All Categories</option>
+                            <option>Programming</option>
+                            <option>Data Science</option>
+                            <option>Marketing</option>
+                            <option>Business</option>
+                            <option>Design</option>
+                        </select>
+                        <select class="filter-dropdown">
+                            <option>All Levels</option>
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="course-results-info">
+                    Showing 12 of 12 courses
+                    <button class="btn-filter-reset"><i class="fas fa-redo"></i></button>
+                </div>
+
+                <div class="course-grid">
+                    <a href="#course-details-section" class="course-card">
+                        <div class="course-image" style="background-image: url('react.jpg');">
+                            <span class="course-tag intermediate">Intermediate</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Complete React Development Bootcamp</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.8 (15,420 students)</span>
+                                <span><i class="fas fa-clock"></i> 42 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$89.99</span>
+                                <button class="btn btn-secondary" onclick="event.preventDefault(); location.href='#course-details-section';">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('advancejs.jpg');">
+                            <span class="course-tag advanced">Advanced</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Advanced JavaScript Concepts</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.9 (16,500 students)</span>
+                                <span><i class="fas fa-clock"></i> 32 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$74.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('flutter.jpg');">
+                            <span class="course-tag intermediate">Intermediate</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Mobile App Development with Flutter</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.8 (12,800 students)</span>
+                                <span><i class="fas fa-clock"></i> 38 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$99.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('python.jpg');">
+                            <span class="course-tag beginner">Beginner</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Python for Beginners</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.9 (28,900 students)</span>
+                                <span><i class="fas fa-clock"></i> 25 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$59.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('dataScience.jpg');">
+                            <span class="course-tag advanced">Advanced</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Data Science with Python</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.9 (21,200 students)</span>
+                                <span><i class="fas fa-clock"></i> 58 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$129.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('machineLearning.jpg');">
+                            <span class="course-tag intermediate">Intermediate</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Machine Learning Fundamentals</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.7 (25,100 students)</span>
+                                <span><i class="fas fa-clock"></i> 45 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$119.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('ui.jpg');">
+                            <span class="course-tag design">Beginner</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>UI/UX Design Fundamentals</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.7 (18,900 students)</span>
+                                <span><i class="fas fa-clock"></i> 35 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$94.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('adobe.jpg');">
+                            <span class="course-tag design">Intermediate</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Adobe Creative Suite Mastery</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.8 (16,750 students)</span>
+                                <span><i class="fas fa-clock"></i> 40 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$109.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('digitalMarketing.jpg');">
+                            <span class="course-tag marketing">Beginner</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Digital Marketing Masterclass</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.9 (22,180 students)</span>
+                                <span><i class="fas fa-clock"></i> 28 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$79.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('socialMedia.jpg');">
+                            <span class="course-tag marketing">Intermediate</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Social Media Marketing Strategy</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.6 (14,300 students)</span>
+                                <span><i class="fas fa-clock"></i> 22 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$69.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('enterpreneurship.jpg');">
+                            <span class="course-tag business">Beginner</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Entrepreneurship Essentials</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.7 (17,900 students)</span>
+                                <span><i class="fas fa-clock"></i> 30 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$84.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card">
+                        <div class="course-image" style="background-image: url('projectManagement.jpg');">
+                            <span class="course-tag business">Advanced</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Project Management Professional</h3>
+                            <p class="instructor">By Prince</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-star"></i> 4.8 (19,800 students)</span>
+                                <span><i class="fas fa-clock"></i> 40 hours</span>
+                            </div>
+                            <div class="course-price-enroll">
+                                <span class="price">$119.99</span>
+                                <button class="btn btn-secondary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard-section" class="dashboard-main">
+            <section class="dashboard-summary">
+                <div class="container">
+                    <div class="summary-item">
+                        <i class="fas fa-book-reader"></i>
+                        <span class="summary-value">3</span>
+                        <span class="summary-label">Courses Enrolled</span>
+                    </div>
+                    <div class="summary-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="summary-value">46</span>
+                        <span class="summary-label">Courses Learned</span>
+                    </div>
+                    <div class="summary-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span class="summary-value">12 days</span>
+                        <span class="summary-label">Current Streak</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="continue-learning-section">
+                <div class="container">
+                    <h2>Continue Learning</h2>
+                    <div class="course-progress-list">
+                        <div class="course-progress-item">
+                            <div class="course-thumb" style="background-image: url('https://via.placeholder.com/80x50/5C6BC0/FFFFFF?text=React');"></div>
+                            <div class="progress-details">
+                                <h3>Complete React Development Bootcamp</h3>
+                                <p class="instructor">By Prince</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 67%;"></div>
+                                </div>
+                                <span class="progress-text">67% Progress</span>
+                            </div>
+                            <div class="course-tags-continue">
+                                <span class="tag">Programming</span>
+                                <a href="#course-details-section" class="btn btn-secondary">Continue</a>
+                            </div>
+                        </div>
+
+                        <div class="course-progress-item">
+                            <div class="course-thumb" style="background-image: url('digitalMarketing.jpg');"></div>
+                            <div class="progress-details">
+                                <h3>Digital Marketing Masterclass</h3>
+                                <p class="instructor">By Prince</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 30%;"></div>
+                                </div>
+                                <span class="progress-text">30% Progress</span>
+                            </div>
+                             <div class="course-tags-continue">
+                                <span class="tag">Marketing</span>
+                                <a href="#" class="btn btn-secondary">Continue</a>
+                            </div>
+                        </div>
+
+                        <div class="course-progress-item">
+                            <div class="course-thumb" style="background-image: url('ui.jpg');"></div>
+                            <div class="progress-details">
+                                <h3>UI/UX Design Fundamentals</h3>
+                                <p class="instructor">By Prince</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 85%;"></div>
+                                </div>
+                                <span class="progress-text">85% Progress</span>
+                            </div>
+                            <div class="course-tags-continue">
+                                <span class="tag">Design</span>
+                                <a href="#" class="btn btn-secondary">Continue</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="learning-analytics-section">
+                <div class="container">
+                    <h2>Learning Analytics</h2>
+                    <div class="analytics-grid">
+                        <div class="analytics-item">
+                            <span class="analytics-value">65%</span>
+                            <p class="analytics-label">Average Progress</p>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">28</span>
+                            <p class="analytics-label">Lessons Completed</p>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">12</span>
+                            <p class="analytics-label">Day Streak</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="achievements-section">
+                <div class="container">
+                    <h2>Achievements</h2>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <i class="fas fa-trophy achievement-icon"></i>
+                            <div class="achievement-text">
+                                <h3>First Course Completed</h3>
+                                <p>You completed your first course!</p>
+                            </div>
+                            <i class="fas fa-check-circle achievement-status"></i>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-fire achievement-icon"></i>
+                            <div class="achievement-text">
+                                <h3>Week Streak</h3>
+                                <p>Maintained a learning streak for 7 consecutive days.</p>
+                            </div>
+                            <i class="fas fa-check-circle achievement-status"></i>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-bullseye achievement-icon"></i>
+                            <div class="achievement-text">
+                                <h3>Goal Achiever</h3>
+                                <p>Reached your monthly learning goal.</p>
+                            </div>
+                            <i class="fas fa-check-circle achievement-status"></i>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-rocket achievement-icon"></i>
+                            <div class="achievement-text">
+                                <h3>Speed Learner</h3>
+                                <p>Completed a course in record time!</p>
+                            </div>
+                            <i class="fas fa-check-circle achievement-status"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recent-activity-section">
+                <div class="container">
+                    <h2>Recent Activity</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <i class="fas fa-history activity-icon"></i>
+                            <p>Completed React State Management</p>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-history activity-icon"></i>
+                            <p>Enrolled in "Data Science with Python"</p>
+                            <span class="activity-time">1 day ago</span>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-history activity-icon"></i>
+                            <p>Watched "Introduction to UI/UX" lesson</p>
+                            <span class="activity-time">3 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section> <section id="profile-section" class="profile-main">
+            <section class="profile-header">
+                <div class="container">
+                    <div class="profile-info-card">
+                        <div class="profile-avatar">PK</div>
+                        <div class="profile-details">
+                            <h2>Prince</h2>
+                            <p class="profile-description">Passionate learner and aspiring web developer. Love to explore new technologies and build amazing projects.</p>
+                            <p class="profile-contact"><i class="fas fa-envelope"></i> Princebth1988@gmail.com</p>
+                            <p class="profile-contact"><i class="fas fa-phone-alt"></i> +91 1234567890</p>
+                            <p class="profile-contact"><i class="fas fa-map-marker-alt"></i> INDIA</p>
+                            <button class="btn btn-primary profile-edit-btn"><i class="fas fa-edit"></i> Edit Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="profile-stats-tabs">
+                <div class="container">
+                    <div class="profile-stats-grid">
+                        <div class="stat-item-profile">
+                            <i class="fas fa-book-open"></i>
+                            <h3>12</h3>
+                            <p>Courses Completed</p>
+                        </div>
+                        <div class="stat-item-profile">
+                            <i class="fas fa-clock"></i>
+                            <h3>156</h3>
+                            <p>Total Hours</p>
+                        </div>
+                        <div class="stat-item-profile">
+                            <i class="fas fa-calendar-check"></i>
+                            <h3>23 days</h3>
+                            <p>Current Streak</p>
+                        </div>
+                        <div class="stat-item-profile">
+                            <i class="fas fa-medal"></i>
+                            <h3>8</h3>
+                            <p>Certificates</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-tabs">
+                        <button class="profile-tab active" data-tab-target="certificates-content">Certificates</button>
+                        <button class="profile-tab" data-tab-target="skills-content">Skills</button>
+                        <button class="profile-tab" data-tab-target="activity-content">Activity</button>
+                    </div>
+
+                    <div id="certificates-content" class="tab-content active">
+                        <h2>My Certificates</h2>
+                        <div class="certificates-grid">
+                            <div class="certificate-card">
+                                <i class="fas fa-certificate certificate-icon-large"></i>
+                                <h3>Complete React Development</h3>
+                                <p>By Prince</p>
+                                <p class="completion-date">Completed: 15/01/2024</p>
+                                <span class="cert-id">CERT-2024-001</span>
+                            </div>
+                            <div class="certificate-card">
+                                <i class="fas fa-certificate certificate-icon-large"></i>
+                                <h3>Digital Marketing Fundamentals</h3>
+                                <p>By Prince</p>
+                                <p class="completion-date">Completed: 23/02/2024</p>
+                                <span class="cert-id">CERT-2024-002</span>
+                            </div>
+                            <div class="certificate-card">
+                                <i class="fas fa-certificate certificate-icon-large"></i>
+                                <h3>UI/UX Design Principles</h3>
+                                <p>By Prince</p>
+                                <p class="completion-date">Completed: 10/03/2024</p>
+                                <span class="cert-id">CERT-2024-003</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills-content" class="tab-content">
+                        <h2>My Skills</h2>
+                        <p>This section would list skills acquired or self-declared. For example:</p>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
+                            <li style="background-color: #e0f2f7; padding: 5px 10px; border-radius: 5px; color: #0277bd; font-size: 0.9em;">React.js</li>
+                            <li style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px; color: #2e7d32; font-size: 0.9em;">JavaScript</li>
+                            <li style="background-color: #fce4ec; padding: 5px 10px; border-radius: 5px; color: #ad1457; font-size: 0.9em;">HTML & CSS</li>
+                            <li style="background-color: #fffde7; padding: 5px 10px; border-radius: 5px; color: #ff8f00; font-size: 0.9em;">Digital Marketing</li>
+                            <li style="background-color: #e3f2fd; padding: 5px 10px; border-radius: 5px; color: #1976d2; font-size: 0.9em;">UI/UX Design</li>
+                        </ul>
+                    </div>
+                    <div id="activity-content" class="tab-content">
+                        <h2>My Recent Activity</h2>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <i class="fas fa-history activity-icon"></i>
+                                <p>Completed React State Management lesson</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-history activity-icon"></i>
+                                <p>Enrolled in "Data Science with Python" course</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-history activity-icon"></i>
+                                <p>Watched "Introduction to UI/UX" lesson</p>
+                                <span class="activity-time">3 days ago</span>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-history activity-icon"></i>
+                                <p>Received "Week Streak" achievement badge</p>
+                                <span class="activity-time">1 week ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section> <section id="course-details-section" class="course-details-main">
+            <section class="course-hero-details">
+                <div class="container">
+                    <h1>Complete React Development Bootcamp</h1>
+                    <p class="course-description">Master React from beginner to advanced level with hands-on projects and real-world applications.</p>
+                    <div class="course-meta-details">
+                        <span><i class="fas fa-user-tie"></i> Prince</span>
+                        <span><i class="fas fa-star"></i> 4.8 (12,800 students)</span>
+                        <span><i class="fas fa-clock"></i> 42 hours</span>
+                        <span><i class="fas fa-sliders-h"></i> Beginner to Advanced</span>
+                    </div>
+
+                    <div class="course-image" style="background-image: url('react.jpg');">
+                            <span class="course-tag design">Pro</span>
+                        </div>
+
+                    <div class="course-buy-box">
+                        <span class="current-price">$89.99</span>
+                        <span class="original-price">$160.00</span>
+                        <button class="btn btn-primary btn-enroll">Enroll Now</button>
+                        <div class="course-actions-guarantee">
+                            <button class="btn-icon-text"><i class="fas fa-heart"></i> Wishlist</button>
+                            <button class="btn-icon-text"><i class="fas fa-share-alt"></i> Share</button>
+                            <span><i class="fas fa-undo-alt"></i> 30-Day Money-Back Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="course-curriculum-section">
+                <div class="container">
+                    <div class="course-details-tabs">
+                        <button class="detail-tab active" data-tab-target="curriculum-content">Videos & Curriculum</button>
+                        <button class="detail-tab" data-tab-target="overview-content">Overview</button>
+                        <button class="detail-tab" data-tab-target="instructor-content">Instructor</button>
+                        <button class="detail-tab" data-tab-target="reviews-content">Reviews</button>
+                    </div>
+
+                    <div id="curriculum-content" class="tab-content active">
+                        <h3>Course Videos & Curriculum</h3>
+                        <p class="curriculum-summary">3 modules • 156 videos • 42 hours total length</p>
+
+                        <div class="module">
+                            <div class="module-header">
+                                <h4><i class="fas fa-chevron-right"></i> Introduction to React</h4>
+                                <span>3 videos • 2h 30m</span>
+                            </div>
+                            <ul class="lesson-list">
+                                <li><i class="fas fa-play-circle"></i> What is React? <span>12:34</span></li>
+                                <li><i class="fas fa-play-circle"></i> Setting up Development Environment <span>18:40</span></li>
+                                <li><i class="fas fa-play-circle"></i> Your First React Component <span>15:20</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="module">
+                            <div class="module-header">
+                                <h4><i class="fas fa-chevron-right"></i> Components and JSX</h4>
+                                <span>12 videos • 4h 15m</span>
+                            </div>
+                            <ul class="lesson-list">
+                                <li><i class="fas fa-play-circle"></i> Understanding JSX <span>22:10</span></li>
+                                <li><i class="fas fa-play-circle"></i> Composed Props <span>19:45</span></li>
+                                <li><i class="fas fa-play-circle"></i> Event Handling <span>16:30</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="module">
+                            <div class="module-header">
+                                <h4><i class="fas fa-chevron-right"></i> State and Props</h4>
+                                <span>10 videos • 2h 00m</span>
+                            </div>
+                            <ul class="lesson-list">
+                                <li><i class="fas fa-play-circle"></i> Managing Component State <span>25:15</span></li>
+                                <li><i class="fas fa-play-circle"></i> Passing Data with Props <span>20:30</span></li>
+                                <li><i class="fas fa-play-circle"></i> State vs Props <span>18:45</span></li>
+                            </ul>
+                        </div>
+                        </div>
+
+                    <div id="overview-content" class="tab-content">
+                        <h3>Course Overview</h3>
+                        <p>This course provides a comprehensive introduction to React, covering core concepts like components, JSX, state, props, and hooks. You'll build several mini-projects to solidify your understanding and gain practical experience.</p>
+                        <h4>What you'll learn:</h4>
+                        <ul>
+                            <li>Build modern, interactive web applications with React</li>
+                            <li>Understand component-based architecture</li>
+                            <li>Manage state effectively using useState and useReducer</li>
+                            <li>Handle forms and user input</li>
+                            <li>Integrate with APIs</li>
+                            <li>Deploy your React applications</li>
+                        </ul>
+                    </div>
+
+                    <div id="instructor-content" class="tab-content">
+                        <h3>About the Instructor</h3>
+                        <div class="instructor-details">
+                            <div class="instructor-avatar" style="background-image: url('Portfolio/pk.jpg');"></div>
+                            <h4>Prince</h4>
+                            <p class="instructor-bio">Prince is a seasoned full-stack developer with over 2 years of experience in building scalable web applications. She specializes in React, Node.js, and cloud technologies. Sarah is passionate about teaching and has helped thousands of students kickstart their careers in tech.</p>
+                            <p><i class="fas fa-star"></i> 4.8 Instructor Rating</p>
+                            <p><i class="fas fa-users"></i> 150,000+ Students</p>
+                            <p><i class="fas fa-book-open"></i> 5 Courses</p>
+                        </div>
+                    </div>
+
+                    <div id="reviews-content" class="tab-content">
+                        <h3>Student Reviews</h3>
+                        <div class="review-summary">
+                            <div class="overall-rating">
+                                <span>4.8</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>Overall Rating (12,800 ratings)</p>
+                            </div>
+                            <div class="rating-breakdown">
+                                <div class="rating-bar-item">5 stars <div class="bar" style="width: 90%;"></div> <span>90%</span></div>
+                                <div class="rating-bar-item">4 stars <div class="bar" style="width: 7%;"></div> <span>7%</span></div>
+                                <div class="rating-bar-item">3 stars <div class="bar" style="width: 2%;"></div> <span>2%</span></div>
+                                <div class="rating-bar-item">2 stars <div class="bar" style="width: 0.5%;"></div> <span>0.5%</span></div>
+                                <div class="rating-bar-item">1 star <div class="bar" style="width: 0.5%;"></div> <span>0.5%</span></div>
+                            </div>
+                        </div>
+
+                        <div class="student-reviews-list">
+                            <div class="review-item">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">AS</div>
+                                    <div class="reviewer-name-rating">
+                                        <h4>Anjali Sharma</h4>
+                                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <p class="review-date">Reviewed 3 days ago</p>
+                                <p class="review-text">"Excellent course! Sarah explains complex topics very clearly and the projects are super helpful. Highly recommend for anyone looking to learn React."</p>
+                            </div>
+                            <div class="review-item">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">RK</div>
+                                    <div class="reviewer-name-rating">
+                                        <h4>Rahul Kumar</h4>
+                                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                                    </div>
+                                </div>
+                                <p class="review-date">Reviewed 1 week ago</p>
+                                <p class="review-text">"Great content, a bit fast-paced at times but overall a fantastic resource. Learned a lot!"</p>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </section> </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 EduPlatform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to setup tab behavior
+            function setupTabs(tabButtonsSelector, tabContentsSelector) {
+                const tabButtons = document.querySelectorAll(tabButtonsSelector);
+                const tabContents = document.querySelectorAll(tabContentsSelector);
+
+                tabButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Remove active class from all buttons in this group
+                        tabButtons.forEach(btn => btn.classList.remove('active'));
+                        // Remove active class from all content in this group
+                        tabContents.forEach(content => content.classList.remove('active'));
+
+                        // Add active class to clicked button
+                        button.classList.add('active');
+
+                        // Show corresponding content based on data-tab-target attribute
+                        const targetId = button.dataset.tabTarget;
+                        if (targetId) {
+                            const targetContent = document.getElementById(targetId);
+                            if (targetContent) {
+                                targetContent.classList.add('active');
+                            }
+                        }
+                    });
+                });
+            }
+
+            // Setup for Course Details Tabs
+            setupTabs('.course-details-tabs .detail-tab', '.course-curriculum-section .tab-content');
+
+            // Setup for Profile Tabs
+            setupTabs('.profile-tabs .profile-tab', '.profile-stats-tabs .tab-content');
+
+
+            // Module toggling for Course Details page (Curriculum section)
+            const moduleHeaders = document.querySelectorAll('.module-header');
+            moduleHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const module = header.closest('.module');
+                    module.classList.toggle('open');
+                });
+            });
+
+             // Simple active navigation link highlighting based on scroll position (optional advanced feature)
+             const sections = document.querySelectorAll('main section[id]');
+             const navLinks = document.querySelectorAll('.navbar .nav-links a');
+
+             const observerOptions = {
+                 root: null, // viewport
+                 rootMargin: '0px',
+                 threshold: 0.5 // trigger when 50% of the section is visible
+             };
+
+             const observer = new IntersectionObserver((entries, observer) => {
+                 entries.forEach(entry => {
+                     if (entry.isIntersecting) {
+                         const currentSectionId = entry.target.getAttribute('id');
+                         navLinks.forEach(link => {
+                             link.classList.remove('active');
+                             if (link.getAttribute('href') === '#' + currentSectionId) {
+                                 link.classList.add('active');
+                             }
+                         });
+                     }
+                 });
+             }, observerOptions);
+
+             sections.forEach(section => {
+                 observer.observe(section);
+             });
+
+             // Fallback for initial load or if IntersectionObserver isn't ideal
+             // Set active class for Home on initial load if at top or no other section is intersecting
+             if (window.scrollY === 0) {
+                 navLinks.forEach(link => link.classList.remove('active'));
+                 document.querySelector('.navbar .nav-links a[href="#home-section"]').classList.add('active');
+             }
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlatform - Sign In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for signin/signup page to center form */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--background-light);
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .auth-container {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+        .auth-container h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        .auth-container p {
+            color: var(--light-text-color);
+            margin-bottom: 30px;
+        }
+        .auth-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+        }
+        .auth-container label {
+            font-weight: 600;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+        .auth-container input[type="email"],
+        .auth-container input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        .auth-container input[type="email"]:focus,
+        .auth-container input[type="password"]:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(106, 27, 154, 0.2); /* Primary color with transparency */
+        }
+        .auth-container .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: var(--light-text-color);
+        }
+        .auth-container .remember-me input {
+            width: auto;
+            accent-color: var(--primary-color);
+        }
+        .auth-container .forgot-password {
+            text-align: right;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            text-decoration: none;
+            margin-top: -10px; /* Adjust spacing */
+            margin-bottom: 15px;
+        }
+        .auth-container .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .auth-container .btn-primary {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .auth-container .or-continue-with {
+            margin: 25px 0 15px;
+            color: #888;
+            position: relative;
+            font-size: 0.9rem;
+        }
+        .auth-container .or-continue-with::before,
+        .auth-container .or-continue-with::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background: #e0e0e0;
+        }
+        .auth-container .or-continue-with::before {
+            left: 0;
+        }
+        .auth-container .or-continue-with::after {
+            right: 0;
+        }
+        .auth-container .social-login {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .auth-container .social-login button {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #555;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+        .auth-container .social-login button:hover {
+            background-color: #f9f9f9;
+            border-color: #ccc;
+        }
+        .auth-container .social-login button img {
+            height: 24px;
+            width: 24px;
+        }
+        .auth-container .signup-link {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .auth-container .signup-link a {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .auth-container .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments for auth forms */
+        @media (max-width: 600px) {
+            .auth-container {
+                padding: 30px 20px;
+                margin: 0 15px;
+            }
+            .auth-container .social-login {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (simplified for auth pages) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">EduPlatform</a>
+            <div class="nav-actions">
+                <a href="signin.html" class="sign-in active">Sign In</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="auth-container">
+            <h2>Welcome Back!</h2>
+            <p>Log in to access your courses and dashboard.</p>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
+                
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+            <div class="or-continue-with">Or continue with</div>
+            <div class="social-login">
+                <button><img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google"> Google</button>
+                <button><img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook"> Facebook</button>
+            </div>
+            <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2023 EduPlatform. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
